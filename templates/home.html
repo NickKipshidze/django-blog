@@ -1,16 +1,19 @@
+{% extends "./base.html" %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blojango</title>
-    </head>
-    <body>
-        <h1>Blojango</h1>
-
-        <button onclick="parent.location='signup'">Create account</button> 
-        <button onclick="parent.location='login'">Log in</button>
-    </body>
-</html>
+{% block body %}
+    <div class="debug" style="display: flex; flex-direction: column; gap: 50px;">
+        <div>
+            <img class="img-medium" src="{% static 'thumbnails/thumb-1.png' %}" alt="">
+            <h1>How to Change Your Bad Code</h1>
+        </div>
+        <div>
+            <img class="img-medium" src="{% static 'thumbnails/thumb-3.png' %}" alt="">
+            <h1>How to Write Bad Code</h1>
+        </div>
+        <div>
+            <img class="img-medium" src="{% static 'thumbnails/thumb-4.png' %}" alt="">
+            <h1>Do You Know Who Created Fortran?</h1>
+        </div>
+    </div>
+{% endblock body %}
