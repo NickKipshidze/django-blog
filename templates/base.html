@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blojango</title>
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+        {% block head %}
+        {% endblock head %}
+    </head>
+    <body>
+        <header class="navigation debug">
+            <div>
+                <a href="" class="btn">Popular</a>
+                <a href="" class="btn primary">New</a>
+            </div>
+            
+            <h1>Blojango</h1>
+
+            <div>
+                <button class="btn">|||</button>
+                <button class="btn">Search lol</button>
+            </div>
+        </header>
+
+        {% block body %}
+        {% endblock body %}
+    </body>
+</html>
