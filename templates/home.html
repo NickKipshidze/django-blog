@@ -2,18 +2,36 @@
 {% load static %}
 
 {% block body %}
-    <div class="debug" style="display: flex; flex-direction: column; gap: 50px;">
-        <div>
-            <img class="img-medium" src="{% static 'thumbnails/thumb-1.png' %}" alt="">
-            <h1>How to Change Your Bad Code</h1>
+    <div style="display: flex; flex-direction: column; gap: 50px;">
+        <div class="post-thumbnail">
+            <img src="{% static 'thumbnails/thumb-1.png' %}" alt="">
+            <div style="display: flex; gap: 10px; font-size: 0.8rem;">
+                <p style="color: var(--text-passive);">BY</p>
+                <p>TOMAS LAURINAVICIUS</p>
+                <p style="color: var(--text-passive);">IN</p>
+                <p>RESOURCE</p>
+            </div>
+            <h1 style="font-size: 2rem;">How to Change Your Bad Code</h1>
         </div>
-        <div>
-            <img class="img-medium" src="{% static 'thumbnails/thumb-3.png' %}" alt="">
-            <h1>How to Write Bad Code</h1>
+        <div class="post-thumbnail">
+            <img src="{% static 'thumbnails/thumb-2.png' %}" alt="">
+            <div style="display: flex; gap: 10px; font-size: 0.8rem;">
+                <p style="color: var(--text-passive);">BY</p>
+                <p>TOMAS LAURINAVICIUS</p>
+                <p style="color: var(--text-passive);">IN</p>
+                <p>RESOURCE</p>
+            </div>
+            <h1 style="font-size: 2rem;">How to Build A Stonehenge</h1>
         </div>
-        <div>
-            <img class="img-medium" src="{% static 'thumbnails/thumb-4.png' %}" alt="">
-            <h1>Do You Know Who Created Fortran?</h1>
+        <div class="post-thumbnail">
+            <img src="{% static 'thumbnails/thumb-3.png' %}" alt="">
+            <div style="display: flex; gap: 10px; font-size: 0.8rem;">
+                <p style="color: var(--text-passive);">BY</p>
+                <p>TOMAS LAURINAVICIUS</p>
+                <p style="color: var(--text-passive);">IN</p>
+                <p>RESOURCE</p>
+            </div>
+            <h1 style="font-size: 2rem;">How to Draw Something With Bad Posture</h1>
         </div>
     </div>
 {% endblock body %}
